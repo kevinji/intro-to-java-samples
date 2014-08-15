@@ -12,11 +12,25 @@ public class Factorial {
             throw new IllegalArgumentException("n must be positive");
         }
         
+        int product = 1;
+        
+        for (int i = 2; i <= n; i++) {
+            product *= i;
+        }
+        
+        return product;
+    }
+    
+    public static int recursiveFactorial(int n) {
+        if (n < 0) {
+            throw new IllegalArgumentException("n must be positive");
+        }
+        
         if (n == 0 || n == 1) {
             return 1;
         }
         
-        return n * factorial(n - 1);
+        return n * recursiveFactorial(n - 1);
     }
     
     public static void main(String[] args) {
