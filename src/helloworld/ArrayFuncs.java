@@ -29,6 +29,31 @@ public class ArrayFuncs {
         return min;
     }
     
+    public static double sum(double[] array) {
+        double sum = 0;
+        
+        for (double element : array) {
+            sum += element;
+        }
+        
+        return sum;
+    }
+    
+    public static double[] concatenate(double[] array1, double[] array2) {
+        double[] newArray = new double[array1.length + array2.length];
+        
+        for (int i = 0; i < array1.length; i++) {
+            newArray[i] = array1[i];
+        }
+        
+        for (int i = 0; i < array2.length; i++) {
+            // Shift to account for the elements already in newArray
+            newArray[array1.length + i] = array2[i];
+        }
+        
+        return newArray;
+    }
+    
     public static void main(String[] args) {
         double[] array = {2.3, -1.4, 5.9, 6.2, 0, -3.5};
         System.out.println("Maximum: " + max(array)); // 6.2
