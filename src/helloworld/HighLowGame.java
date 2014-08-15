@@ -13,9 +13,11 @@ public class HighLowGame {
         System.out.println("Let's play a high/low game!");
         
         int guess = 0;
+        int guessCount = 0;
         
         while (guess != initialNum) {
             guess = promptForGuess();
+            guessCount++;
             
             if (guess < initialNum) {
                 System.out.println("Higher...");
@@ -23,6 +25,7 @@ public class HighLowGame {
                 System.out.println("Lower...");
             } else {
                 System.out.println("You got it!");
+                System.out.println("You took " + guessCount + " guesses.");
                 break;
             }
         }

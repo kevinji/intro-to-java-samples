@@ -12,9 +12,11 @@ public class HighLowGameStandalone {
         
         final int initialNum = (int)(Math.random() * 100) + 1;
         int guess = 0;
+        int guessCount = 0;
         
         while (guess != initialNum) {
             guess = promptForGuess();
+            guessCount++;
             
             if (guess < initialNum) {
                 System.out.println("Higher...");
@@ -22,6 +24,7 @@ public class HighLowGameStandalone {
                 System.out.println("Lower...");
             } else {
                 System.out.println("You got it!");
+                System.out.println("You took " + guessCount + " guesses.");
                 break;
             }
         }
