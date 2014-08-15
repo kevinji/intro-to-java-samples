@@ -1,5 +1,7 @@
 package helloworld;
 
+import java.util.Arrays;
+
 /**
  * A series of useful array functions.
  * @author Kevin Ji <kevin.ji@outlook.com>
@@ -54,9 +56,37 @@ public class ArrayFuncs {
         return newArray;
     }
     
+    public static double[] reverse(double[] array) {
+        int length = array.length;
+        double[] newArray = new double[length];
+        
+        for (int i = 0; i < length; i++) {
+            newArray[length - i - 1] = array[i];
+        }
+        
+        return newArray;
+    }
+    
+    public static void reverseInPlace(double[] array) {
+        int stopIndex = array.length / 2 - 1;
+        
+        for (int i = 0; i <= stopIndex; i++) {
+            double temp = array[i];
+            array[i] = array[array.length - i - 1];
+            array[array.length - i - 1] = temp;
+        }
+    }
+    
     public static void main(String[] args) {
-        double[] array = {2.3, -1.4, 5.9, 6.2, 0, -3.5};
+        double[] array = {2.3, -1.4, 5.9, 6.2, 0, -3.5, 4.2};
         System.out.println("Maximum: " + max(array)); // 6.2
         System.out.println("Minimum: " + min(array)); // -3.5
+        System.out.println("Sum: " + sum(array)); // 13.7
+        
+        System.out.println("Reversed: " + Arrays.toString(reverse(array)));
+        // [4.2, -3.5, 0.0, 6.2, 5.9, -1.4, 2.3]
+        
+        reverseInPlace(array);
+        System.out.println("Reversed in place: " + Arrays.toString(array));
     }
 }
