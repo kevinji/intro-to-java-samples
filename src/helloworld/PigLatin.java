@@ -7,16 +7,6 @@ package helloworld;
 public class PigLatin {
     private static final char[] VOWELS = {'a', 'e', 'i', 'o', 'u'};
     
-    private static boolean isVowel(char letter) {
-        for (char vowel : VOWELS) {
-            if (letter == vowel) {
-                return true;
-            }
-        }
-        
-        return false;
-    }
-    
     public static String pigLatinWord(String word) {
         char firstLetter = word.charAt(0);
         boolean startsWithVowel = isVowel(firstLetter);
@@ -29,6 +19,16 @@ public class PigLatin {
         }
         
         return newWord;
+    }
+    
+    private static boolean isVowel(char letter) {
+        for (char vowel : VOWELS) {
+            if (letter == vowel) {
+                return true;
+            }
+        }
+        
+        return false;
     }
     
     public static void main(String[] args) {
