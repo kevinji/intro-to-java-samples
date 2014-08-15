@@ -1,7 +1,7 @@
 package helloworld;
 
 /**
- *
+ * A series of useful array functions.
  * @author Kevin Ji <kevin.ji@outlook.com>
  */
 public class ArrayFuncs {

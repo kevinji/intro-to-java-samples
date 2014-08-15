@@ -1,7 +1,7 @@
 package helloworld;
 
 /**
- *
+ * An enum representing each day of the week.
  * @author Kevin Ji <kevin.ji@outlook.com>
  */
 public enum DayOfWeek {

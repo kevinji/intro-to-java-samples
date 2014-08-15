@@ -3,7 +3,7 @@ package helloworld;
 import java.util.Scanner;
 
 /**
- *
+ * Sum numbers up to the number inputted.
  * @author Kevin Ji <kevin.ji@outlook.com>
  */
 public class SumNumber {
