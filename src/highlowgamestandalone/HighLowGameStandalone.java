@@ -1,4 +1,4 @@
-package helloworld;
+package highlowgamestandalone;
 
 import java.util.Scanner;
 
