@@ -12,6 +12,7 @@ public class HelloWorld {
      * @param args the command line arguments
      */
     public static void main(String[] args) {
+        // if-else statements
         int hour = Calendar.getInstance().get(Calendar.HOUR_OF_DAY);
         
         if (5 <= hour && hour < 12) {
@@ -26,15 +27,19 @@ public class HelloWorld {
             System.out.println("Good night!");
         }
         
+        // Multi-dimensional arrays
         int[][] chessBoard = new int[8][];
         
+        // Object creation
         Book harryPotterBook = new Book("Harry Potter and the Half-Blood Prince", "J.K. Rowling", 2005);
         Book harryPotterBook2 = new Book("Harry Potter and the Half-Blood Prince", "J.K. Rowling", 2005);
         Book orwellBook = new Book("1984", "George Orwell", 1949);
         
+        // .equals (*not* ==)
         System.out.println(harryPotterBook.equals(orwellBook));
         System.out.println(harryPotterBook.equals(harryPotterBook2));
         
+        // Enums
         DayOfWeek dayOfWeek = DayOfWeek.WEDNESDAY;
         
         if (dayOfWeek == DayOfWeek.MONDAY) {
@@ -43,6 +48,7 @@ public class HelloWorld {
             System.out.println("Today is not Monday :(");
         }
         
+        // for loops
         int[] cubes = new int[10];
         int sum = 0;
         for (int i = 0; i < 10; i++) {
