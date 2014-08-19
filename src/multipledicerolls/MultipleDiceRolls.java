@@ -2,7 +2,7 @@ package multipledicerolls;
 
 /**
  * Simulate multiple dice rolls.
- * @author Kevin Ji <kevin.ji@outlook.com>
+ * @author Kevin Ji
  */
 public class MultipleDiceRolls {
     public static void main(String[] args) {

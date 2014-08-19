@@ -4,7 +4,7 @@ import java.util.Scanner;
 
 /**
  * Let's play a high/low game!
- * @author Kevin Ji <kevin.ji@outlook.com>
+ * @author Kevin Ji
  */
 public class HighLowGame {
     private final int initialNum = (int)(Math.random() * 100) + 1;

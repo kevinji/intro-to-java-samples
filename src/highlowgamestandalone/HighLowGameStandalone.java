@@ -4,7 +4,7 @@ import java.util.Scanner;
 
 /**
  * Let's play a high/low game (standalone)!
- * @author Kevin Ji <kevin.ji@outlook.com>
+ * @author Kevin Ji
  */
 public class HighLowGameStandalone {
     public static void main(String[] args) {

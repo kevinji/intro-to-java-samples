@@ -4,7 +4,7 @@ import java.util.Scanner;
 
 /**
  * Greet the user.
- * @author Kevin Ji <kevin.ji@outlook.com>
+ * @author Kevin Ji
  */
 public class GreetUser {
     public static void main(String[] args) {

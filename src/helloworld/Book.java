@@ -4,7 +4,7 @@ import java.util.Objects;
 
 /**
  * A book.
- * @author Kevin Ji <kevin.ji@outlook.com>
+ * @author Kevin Ji
  */
 public class Book implements Comparable<Book> {
     private final String name;

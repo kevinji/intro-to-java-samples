@@ -4,7 +4,7 @@ import java.util.Arrays;
 
 /**
  * A series of useful array functions.
- * @author Kevin Ji <kevin.ji@outlook.com>
+ * @author Kevin Ji
  */
 public class ArrayFuncs {
     public static double max(double[] array) {

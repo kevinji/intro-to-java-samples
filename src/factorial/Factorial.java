@@ -4,7 +4,7 @@ import java.util.Scanner;
 
 /**
  * Calculate factorials!
- * @author Kevin Ji <kevin.ji@outlook.com>
+ * @author Kevin Ji
  */
 public class Factorial {
     public static int factorial(int n) {

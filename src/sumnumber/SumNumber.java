@@ -4,7 +4,7 @@ import java.util.Scanner;
 
 /**
  * Sum numbers up to the number inputted.
- * @author Kevin Ji <kevin.ji@outlook.com>
+ * @author Kevin Ji
  */
 public class SumNumber {
     public static void main(String[] args) {      

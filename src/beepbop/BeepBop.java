@@ -2,7 +2,7 @@ package beepbop;
 
 /**
  * Beep bop!
- * @author Kevin Ji <kevin.ji@outlook.com>
+ * @author Kevin Ji
  */
 public class BeepBop {
     public static void main(String[] args) {

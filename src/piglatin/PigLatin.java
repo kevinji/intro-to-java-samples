@@ -2,7 +2,7 @@ package piglatin;
 
 /**
  * A Pig Latin generator.
- * @author Kevin Ji <kevin.ji@outlook.com>
+ * @author Kevin Ji
  */
 public class PigLatin {
     private static final char[] VOWELS = {'a', 'e', 'i', 'o', 'u'};
